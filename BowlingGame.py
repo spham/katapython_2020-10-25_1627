@@ -7,6 +7,8 @@ class BowlingGame:
     
     def score(self):
         result = 0
-        for i in range(20):
-            result += self.rolls[i]
+        rollIndex = 0
+        for i in range(10):
+            result += self.rolls[rollIndex]+self.rolls[rollIndex+1]
+            rollIndex +=2
         return result

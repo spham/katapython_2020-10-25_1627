@@ -7,14 +7,15 @@ class TestBowlingGame(unittest.TestCase):
         self.game = BowlingGame.BowlingGame()
     
     def testCreateGame(self):
-        game = BowlingGame.BowlingGame()
+        self.game = BowlingGame.BowlingGame()
         
     def testGutterGale(self):
-        for i in range(20):
-            self.game.roll(0)
+        self.rollMany(0,20)
         assert self.game.score() == 0
     def testAllOnes(self):
-        for i in range(20):
-            self.game.roll(1)
+        self.rollMany(1,20)
         assert self.game.score() == 20
         
+    def rollMany(self, pins, rolls):
+        for i in range(rolls):
+            self.game.roll(pins)
