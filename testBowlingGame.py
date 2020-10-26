@@ -24,3 +24,25 @@ class TestBowlingGame(unittest.TestCase):
         self.game.roll(3)
         self.rollMany(0,17)
         assert self.game.score() == 16
+    def testOneStike(self):
+        """
+        docstring
+        """
+        self.game.roll(10)
+        self.game.roll(4)
+        self.game.roll(3)
+        self.rollMany(0, 16)
+        assert self.game.score() == 24 
+    def testPerfectGame(self):
+        """
+        docstring
+        """
+        self.rollMany(10,12)
+        assert self.game.score() == 300
+        
+    def testAllSpares(self):
+        """
+        docstring
+        """
+        self.rollMany(5,21)
+        assert self.game.score() == 150
