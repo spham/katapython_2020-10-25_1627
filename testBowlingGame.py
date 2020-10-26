@@ -5,7 +5,6 @@ class TestBowlingGame(unittest.TestCase):
     
     def setUp(self):
         self.game = BowlingGame.BowlingGame()
-    
     def testCreateGame(self):
         self.game = BowlingGame.BowlingGame()
         
@@ -19,3 +18,9 @@ class TestBowlingGame(unittest.TestCase):
     def rollMany(self, pins, rolls):
         for i in range(rolls):
             self.game.roll(pins)
+    def testOneSpare(self):
+        self.game.roll(5)
+        self.game.roll(5)
+        self.game.roll(3)
+        self.rollMany(0,17)
+        assert self.game.score() == 16

@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BowlingGame	BowlingGame.py	/^class BowlingGame:$/;"	c
+TestBowlingGame	testBowlingGame.py	/^class TestBowlingGame(unittest.TestCase):$/;"	c
+__init__	BowlingGame.py	/^    def __init__(self):$/;"	m	class:BowlingGame
+roll	BowlingGame.py	/^    def roll(self, pins):$/;"	m	class:BowlingGame
+rollMany	testBowlingGame.py	/^    def rollMany(self, pins, rolls):$/;"	m	class:TestBowlingGame
+score	BowlingGame.py	/^    def score(self):$/;"	m	class:BowlingGame
+setUp	testBowlingGame.py	/^    def setUp(self):$/;"	m	class:TestBowlingGame
+testAllOnes	testBowlingGame.py	/^    def testAllOnes(self):$/;"	m	class:TestBowlingGame
+testCreateGame	testBowlingGame.py	/^    def testCreateGame(self):$/;"	m	class:TestBowlingGame
+testGutterGale	testBowlingGame.py	/^    def testGutterGale(self):$/;"	m	class:TestBowlingGame
